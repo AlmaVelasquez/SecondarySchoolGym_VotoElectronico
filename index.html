@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Votación Escolar</title>
-       <H1>Secondary School Gym</H1>
+    <title>Votación Escolar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,17 +13,17 @@
         <form id="voteForm">
             <div class="candidate">
                 <input type="radio" id="candidate1" name="candidate" value="Candidato 1">
-                <label for="candidate1">Primer grado</label>
+                <label for="candidate1">Candidato 1</label>
                 <span id="count1">0</span> votos
             </div>
             <div class="candidate">
                 <input type="radio" id="candidate2" name="candidate" value="Candidato 2">
-                <label for="candidate2">Segundo grado</label>
+                <label for="candidate2">Candidato 2</label>
                 <span id="count2">0</span> votos
             </div>
             <div class="candidate">
                 <input type="radio" id="candidate3" name="candidate" value="Candidato 3">
-                <label for="candidate3">Tercer grado</label>
+                <label for="candidate3">Candidato 3</label>
                 <span id="count3">0</span> votos
             </div>
             <button type="button" onclick="submitVote()">Votar</button>
